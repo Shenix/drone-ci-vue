@@ -1,12 +1,12 @@
-kind: pipeline
-steps:
-- name: Node install
-  image: node:12
-  commands:
-  - npm install
-- name: Lint project
-  commands:
-  - npm run lint
-- name: Build project
-  commands:
-  - npm run build
+pipeline:
+  install:
+    image: node:latest
+    commands:
+      - npm install
+  build:
+    image: node:latest
+    commands:
+      - npm run build
+  test:
+    image: node:latest
+    commands: npm run lint
