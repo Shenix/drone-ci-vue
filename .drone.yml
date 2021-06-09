@@ -1,6 +1,4 @@
 kind: pipeline
-name: default
-
 steps:
 - name: Node install
   image: node:12
