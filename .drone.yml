@@ -7,6 +7,6 @@ pipeline:
     image: node:latest
     commands:
       - npm run build
-  test:
+  lint:
     image: node:latest
     commands: npm run lint
